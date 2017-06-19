@@ -1,88 +1,101 @@
 body {
-  background-image: url(https://images.pexels.com/photos/147503/pexels-photo-147503.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
-  background-position: center;
+  background-color: black;
+  background-image: url(https://static.pexels.com/photos/338936/pexels-photo-338936.jpeg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
+  background-attatchment: fixed;
 }
-/*Navigation*/
-.navbar {
-  display: flex;
-  width: 100%;
-  font-size: 18px;
-  background: black;
-  height: 20px;
-  opacity: 0.5;
-  ;
-}
-.art {
-  height: 70px;
-  width: 33%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.resume {
-  height: 70px;
-  width: 33%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.LinkedIn {
-  height: 70px;
-  width: 33%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.header {
-  text-align:center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-family: 'Kumar One', cursive;
-}
-/*Will not resize correctly?*/
+/*Main Centered Name Splash*/
 h1 {
-  font-size: 50px;
-}
-/*Midsection Tagline*/
-.middle {
-  height: 350px;
-  width: 100%;
-  background: black;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  opacity: 0.5;
   color: white;
   text-align: center;
-  font-size: 38px;
-  font-family: 'Kumar One', cursive;
+  font-size: 80px;
+  margin-bottom: 0px;
+  margin-top: 200px;
+  font-family: 'Archivo Black', sans-serif;
 }
-/*Tic-Tac_Toe*/
-.expertise {
-  width: 60%;
-  height: 100px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  background: white;
-  opacity: 0.5;
+h2 {
   text-align: center;
-  font-size: 24px;
-  color: black;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 100px;
+  font-family: 'Libre Baskerville', serif;
 }
+/*Navigational Header*/
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+}
+a {
+  color: white;
+  float: left;
+  padding-right: 10px;
+}
+.right:hover {
+  color: red;
+
+}
+.right {
+  float: right;
+  margin-left: 20px;
+}
+
+.thumbnail img {
+  width: 350px;
+  height: 400px;
+}
+/*Main body section*/
+.about {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  width: 100%;
+  height: 425px;
+  background-color: darkolivegreen;
+}
+.info {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 46px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+}
+.ramble {
+  width: 40%;
+  height: 100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+}
+p {
+  text-align: center;
+}
+
+/*Tic-Tac_Toe*/
+
 .ttt {
+  margin-top: 20px;
   width: 100%;
   height: 400px;
-  padding-left: 550px;
+  padding-left: 600px;
 }
 div[data-cell] {
   width: 125px;
   height: 125px;
-  background-color: #f2f2f2;
+  background-color: #768858;
   float: left;
-  border: 1px solid #808080;
+  border: 1px solid #302013;
   font-size: 100px;
   text-align: center;
 
@@ -103,49 +116,22 @@ div[data-cell] {
   margin-left: 130px;
 }
 
-/*Bottom of page, Contact and About*/
-.footer {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  background: black;
-}
-.contact {
-  padding-top: 50px;
-  width: 100%;
-}
-h2 {
-  margin-left: 30px;
-}
-ul {
-  padding-top: 40px;
-  list-style: none;
-}
-.about {
-  padding-top: 50px;
-  width: 600px;
-}
-p {
-  padding-top: 40px;
-  padding-left: 25px;
-}
-/*Media Queries, Tablet then Phone*/
-@media (min-width: 768px)
-  and (max-width: 1025px) {
-    h1 {
-      font-size: 38px;
-    }
-    .middle {
-      font-size: 18px;
-      height: 250px;
-    }
-}
 
-@media (max-width: 767px){
-  .middle{
-    font-size: 10px;
-    height: 200px;
-    width: 80%;
-    margin-bottom: 50px;
-  }
+/*Contact info footer*/
+.lower {
+  width: 100%;
+  height: 250px;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 18px;
+  font-family: 'Libre Baskerville', serif;
+  background: rgba(85, 107, 47,.5);
+
+}
+.me {
+ display: flex;
+ width: 30%;
+ height: 100px;
+ float: right;
+ color: white;
 }
